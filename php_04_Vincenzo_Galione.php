@@ -9,14 +9,6 @@ $users = [
 ];
 
 
-
-// echo $users[3].$users[0]["gender"].$users[0]["name"].$users[0]["surname"].("\n");
-// echo $users[3].$users[1]["gender"].$users[1]["name"].$users[1]["surname"].("\n");
-// echo $users[3].$users[2]["name"].$users[2]["surname"];
-
-
-
-
 foreach ($users as $user) {
     if ($user['gender']=='M'){
         echo "Buongiorno Sig." . $user['name'] . " " . $user['surname'] ."\n";
