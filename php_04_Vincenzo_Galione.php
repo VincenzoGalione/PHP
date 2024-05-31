@@ -15,13 +15,7 @@ echo $users[3].$users[2]["name"].$users[2]["surname"];
 
 
 
-// $teachers = [
-//     "Lorenzo" => ['Docente',23,"Backend",["Laravel","Livewire"]]
-// ];
 
-// echo $teachers["Lorenzo"][0];
-// echo $teachers["Lorenzo"][1];
-// echo $teachers["Lorenzo"][3][0];
 
 
 
