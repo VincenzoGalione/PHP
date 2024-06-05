@@ -9,9 +9,6 @@ function checkLenght ($password){
         echo "La password deve essere più lunga di 8 caratteri \n";
         return false;
     }  
-    
-    
-    
 }
 
 function checkUppercase($password){
@@ -20,11 +17,9 @@ function checkUppercase($password){
             echo "La tua password contiene un carattere maiuscolo\n";
             return true;
         }
-        else {
-            echo "La tua password non contiene un carattere maiuscolo\n";
-            return false;
-        }  
     }
+    echo "La tua password non contiene un carattere maiuscolo\n";
+    return false;      
 }
 
 function checkNumber($password){
@@ -36,7 +31,6 @@ function checkNumber($password){
     }
     echo "La password non contiene un numero\n";
     return false;
-    
 }
 
 const SPECIAL_CHARS = ["!","@", "#", "$"];
