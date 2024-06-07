@@ -1,7 +1,7 @@
 <?php
     class Car 
     {
-        private $num_Telaio;
+        private $num_telaio;
         protected function setCarTelaio($string)
         {
             return $this->num_telaio = $string;
