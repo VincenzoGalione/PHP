@@ -87,7 +87,7 @@ class Amphibian extends Coldblood{
     }
 }
 
-$magikarp = new fish();
+$magikarp = new Fish();
 
 
 
