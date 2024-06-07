@@ -33,12 +33,12 @@
         }
 
         public function printMessage(){
-            echo "La mia auto è $this->name con targa $this->license e numero di telaio". $this->getMyTelaio() . "\n";
+            echo "La mia auto è $this->name con targa $this->license e numero di telaio"." ". $this->getMyCarTelaio() . "\n";
         }
     }
 
-    $car = new Fiat('1526','Opel');
-    $car->setMyCarTelaio('15646516516');
+    $car = new Fiat('ND 123 OJ','Opel');
+    $car->setMyCarTelaio('1234');
     $car->printMessage();
    
 
