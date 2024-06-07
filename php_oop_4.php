@@ -33,7 +33,7 @@
         }
 
         public function printMessage(){
-            echo "La mia auto è $this->name con targa $this->license e numero di telaio"." ". $this->getMyCarTelaio() . "\n";
+            echo "La mia auto è un $this->name con targa $this->license e il suo numero di telaio"." ". $this->getMyCarTelaio() . "\n";
         }
     }
 
