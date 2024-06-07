@@ -1,9 +1,14 @@
 <?php
-    class Car {
+    class Car 
+    {
         private $num_Telaio;
-
-        public function __construct($telaio){
-            $this->num_Telaio = $telaio;
+        protected function setCarTelaio($string)
+        {
+            return $this->num_telaio = $string;
+        }
+        protected function getCarTelaio()
+        {
+            return $this->num_telaio;
         }
     }
 
@@ -11,20 +16,30 @@
         protected $license;
         protected $name;
 
-        public function __construct($telaio, $licenza, $name){
-            parent::__construct($telaio);
-            $this->license = $licenza;
-            $this->name = $name;
+        public function __construct($targa, $nome)
+        {
+            $this->license = $targa;
+            $this->name = $nome;
         }
 
-        public function currentCar(){
-            echo "La mia auto è $this->$name, con targa $this->$license e numero di telaio  $this->$num_Telaio,  ";
+        public function setMyCarTelaio($string)
+        {
+            return $this->setCarTelaio($string);
         }
 
+        public function getMyCarTelaio()
+        {
+            return $this->getCarTelaio();
+        }
+
+        public function printMessage(){
+            echo "La mia auto è $this->name con targa $this->license e numero di telaio". $this->getMyTelaio() . "\n";
+        }
     }
 
-    $myCar = new Fiat('opel', '15264cg', 1526);
-    $myCar->currentCar();
+    $car = new Fiat('1526','Opel');
+    $car->setMyCarTelaio('15646516516');
+    $car->printMessage();
    
 
 
