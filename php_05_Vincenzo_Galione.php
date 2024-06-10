@@ -4,11 +4,13 @@ $counter = 0;
 $pari = 0 ;
 
 foreach($numbers as $number){
-    if($number % 2 == 0){
+    if($number % 2 == 0)
+    {
         $counter++ ."\n";
         $pari += $number;   
     };
 };
+
 $media = $pari/$counter;
 echo "La somma dei numeri pari è :". " "  .$pari ."\n"; 
 echo "I numeri pari presenti nell'array sono :". " " .$counter ."\n";
