@@ -8,8 +8,9 @@ abstract class Category{
 }
 
 class Actuality extends Category{
+
     public function getMyCategory(){
-        echo " Sono l'attualità\n";
+        return "Actuality";
     }
 }
 
