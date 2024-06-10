@@ -26,15 +26,31 @@ class Post{
     }
 }
 
-$post1 = new Post("Titolo 1\n", new Actuality(), "tag 1\n");
-$post2 = new Post("Titolo 2\n", new Gossip(), "tag 2\n");
-$post3 = new Post("Titolo 3\n", new Sport(), "tag 3\n");
-$post4 = new Post("Titolo 4\n", new History(), "tag 4\n");
+$post1 = new Post("Titolo1". " ", new Actuality(), "tag1\n");
+$post2 = new Post("Titolo2" ." ", new Gossip(), "tag2\n");
+$post3 = new Post("Titolo3". " ", new Sport(), "tag3\n");
+$post4 = new Post("Titolo4". " ", new History(), "tag4\n");
 
 echo $post1->getCategory();
+echo $post1->getTitle();
+echo $post1->getTag();
+
+echo $post2->getCategory();
 echo $post2->getTitle();
+echo $post2->getTag();
+
+
+echo $post3->getCategory();
+echo $post3->getTitle();
 echo $post3->getTag();
+
+
 echo $post4->getCategory();
+echo $post4->getTitle();
+echo $post4->getTag();
+
+
+
 
 
 
