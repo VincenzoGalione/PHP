@@ -61,7 +61,7 @@
 
     class Gas extends Arm{
         public function attacco(){
-            echo "Gas lacrimogeno erp poter scappare nei momenti di bisogno\n";
+            echo "Gas lacrimogeno per poter scappare nei momenti di bisogno\n";
         }
     }
 

@@ -15,6 +15,12 @@ $silverCenturion->attaccare("sx");
 echo Armor::$counter . "\n";
 
 
+$ironPatriot = new Armor ( new Gas, new Cannoni, new Morse);
+$ironPatriot->movimento();
+$ironPatriot->attaccare();
+$ironPatriot->attaccare("sx");
+echo Armor::$counter . "\n";
+
 
 
 
