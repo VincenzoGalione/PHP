@@ -34,16 +34,16 @@ class History extends Category{
 
 
 $attualità = new Actuality();
-echo $attualità->getMyCategory();
+// echo $attualità->getMyCategory();
 
 $sport = new Sport();
-echo $sport->getMyCategory();
+// echo $sport->getMyCategory();
 
 $notizie= new Gossip();
-echo $notizie->getMyCategory();
+// echo $notizie->getMyCategory();
 
 $storia = new History();
-echo $storia->getMyCategory();
+// echo $storia->getMyCategory();
 
 
 
