@@ -34,6 +34,7 @@ $post4 = new Post("Titolo 4\n", new History(), "tag 4\n");
 echo $post1->getCategory();
 echo $post2->getTitle();
 echo $post3->getTag();
+echo $post4->getCategory();
 
 
 
