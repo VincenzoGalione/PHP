@@ -4,11 +4,13 @@
         public $armSx;
         public $armDx;
         public $legs;
+        public static $counter = 0;
 
         public function __construct(Arm $_armSx, Arm $_armDx, Legs $_legs){
             $this->armDx = $_armDx;
             $this->armSx = $_armSx;
             $this->legs = $_legs;
+            self::$counter++;
         }
 
         public function attaccare(string $side = "dx"){
