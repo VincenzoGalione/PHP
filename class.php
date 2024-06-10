@@ -10,30 +10,31 @@ abstract class Category{
 class Actuality extends Category{
 
     public function getMyCategory(){
-        return "Actuality";
+        return "Attualità\n";
     }
 }
 
 class Sport extends Category{
     public function getMyCategory(){
-        echo " Sono lo sport\n";
+        return "Sport\n";
     }
 }
 
 class Gossip extends Category{
     public function getMyCategory(){
-        echo " Sono il gossip\n";
+        return "Gossip\n";
     }
 }
 
-class Story extends Category{
+class History extends Category{
     public function getMyCategory(){
-        echo " Sono la storia\n";
+        return "Storia\n";
     }
 }
 
 
-$giornale = new Category (new Sport);
+$sport = new Sport();
+echo $sport->getMyCategory();
 
 
 
